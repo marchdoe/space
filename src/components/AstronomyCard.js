@@ -1,4 +1,5 @@
 import React from 'react';
+import styled, { css } from 'styled-components'
 
 const AstronomyCard = (props) => {
 
@@ -6,11 +7,10 @@ const AstronomyCard = (props) => {
 
   return (
     <div className='astronomy-card'>
-
-      <h6 className='astronomy-title'>{title}</h6>
+      <Heading className='astronomy-title'>{title}</Heading>
 
       <a href={hdurl} className='astronomy-image-wrapper'>
-        <img src={url} alt={title} />
+        <ImgStyled src={url} alt={title} />
       </a>
 
       <p>{explanation}</p>
@@ -19,5 +19,14 @@ const AstronomyCard = (props) => {
     </div>
   )
 }
+
+const Heading = styled.h1`
+  font-size: 3em;
+  font-family: Helvetica;
+`
+
+const ImgStyled = styled.img`
+  width: 100%;
+`
 
 export default AstronomyCard;

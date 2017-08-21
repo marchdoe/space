@@ -1,8 +1,7 @@
-import React from 'react';
-import styled, { css } from 'styled-components'
+import React from 'react'
+import styled from 'styled-components'
 
 const AstronomyCard = (props) => {
-
   const { title, url, hdurl, explanation, date, copyright } = props.data
 
   return (
@@ -29,4 +28,4 @@ const ImgStyled = styled.img`
   width: 100%;
 `
 
-export default AstronomyCard;
+export default AstronomyCard

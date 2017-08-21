@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import AstronomyCard from './AstronomyCard';
+import React, { Component } from 'react'
+import AstronomyCard from './AstronomyCard'
 import axios from 'axios'
 
 class AstronomyContainer extends Component {
 
   constructor () {
-    super ()
+    super()
 
     this.state = {
       astronomy: []
@@ -16,7 +16,7 @@ class AstronomyContainer extends Component {
     const API_KEY = 'Pk2DfKL9j4DkvorQMK6aKdHcnUy7hB4eB8lOI6lv'
     const END_POINT = 'https://api.nasa.gov/planetary/apod?api_key='
 
-    axios.get(END_POINT+API_KEY)
+    axios.get(END_POINT + API_KEY)
       .then(response => {
         this.setState({
           astronomy: response.data
@@ -30,7 +30,7 @@ class AstronomyContainer extends Component {
       })
   }
 
-  render() {
+  render () {
     const { astronomy } = this.state
 
     return (
@@ -39,4 +39,4 @@ class AstronomyContainer extends Component {
   }
 }
 
-export default AstronomyContainer;
+export default AstronomyContainer

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import AstronomyContainer from './components/AstronomyContainer';
+import React from 'react'
+import AstronomyContainer from './components/AstronomyContainer'
 
 const App = () => {
   return (
@@ -7,4 +7,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
